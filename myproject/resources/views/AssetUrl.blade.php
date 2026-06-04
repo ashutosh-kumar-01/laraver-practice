@@ -1,0 +1,1 @@
+<img src="{{ asset('images/pp.jpeg') }}" alt="Image">
