@@ -2,49 +2,16 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Students;
 use Illuminate\Http\Request;
 
-class ProductController extends Controller
+class ProductController
 {
-    // Show all products
-    public function index()
-    {
-        return view('products.index');
-    }
+   public function index()
+{
+    $products = Students::all();
 
-    // Show create form
-    public function create()
-    {
-        return "Create Product Form";
-    }
-
-    // Store new product
-    public function store(Request $request)
-    {
-        return "Product Stored";
-    }
-
-    // Show single product
-    public function show(string $id)
-    {
-        return "Showing Product ID: " . $id;
-    }
-
-    // Show edit form
-    public function edit(string $id)
-    {
-        return "Edit Form for Product ID: " . $id;
-    }
-
-    // Update product
-    public function update(Request $request, string $id)
-    {
-        return "Updated Product ID: " . $id;
-    }
-
-    // Delete product
-    public function destroy(string $id)
-    {
-        return "Deleted Product ID: " . $id;
-    }
+    return view('products', compact('products'))
+        ->with('title', 'Product List');
+}
 }

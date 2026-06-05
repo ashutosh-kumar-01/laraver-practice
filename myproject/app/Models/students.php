@@ -11,9 +11,8 @@ class Students extends Model
     protected $collection = 'students';
 
     protected $fillable = [
+        'Id',
         'name',
-        'email',
-        'course',
-        'password'
+        'price'
     ];
 }
