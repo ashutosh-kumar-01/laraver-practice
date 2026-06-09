@@ -57,10 +57,10 @@ Route::get('/', function () {
 // Route::get('/student-form', [StudentFormController::class, 'showForm']);
 // Route::post('/submit-form', [StudentFormController::class, 'submitForm']);
 
-// // send email route
-// // Route::get('/send-mail', [SendEmail::class, 'send']);
-// Route::post('/send-mail', [SendEmail::class, 'sendMail']);
-// Route::get('/mail-form', [SendEmail::class, 'showMailForm']);
+// send email route
+// Route::get('/send-mail', [SendEmail::class, 'send']);
+Route::post('/send-mail', [SendEmail::class, 'sendMail']);
+Route::get('/mail-form', [SendEmail::class, 'showMailForm']);
 
 
 
