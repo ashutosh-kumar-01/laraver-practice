@@ -53,9 +53,9 @@ Route::get('/', function () {
 // Route::get('/get-quotes',[APIController::class, 'fetch']);
 
 
-// // Form Validation Route
-// Route::get('/student-form', [StudentFormController::class, 'showForm']);
-// Route::post('/submit-form', [StudentFormController::class, 'submitForm']);
+// Form Validation Route
+Route::get('/student-form', [StudentFormController::class, 'showForm']);
+Route::post('/submit-form', [StudentFormController::class, 'submitForm']);
 
 // send email route
 // Route::get('/send-mail', [SendEmail::class, 'send']);
