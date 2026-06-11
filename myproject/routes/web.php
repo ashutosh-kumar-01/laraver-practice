@@ -64,11 +64,11 @@ Route::get('/mail-form', [SendEmail::class, 'showMailForm']);
 
 
 
-// // send file route
-// // File Uploading Route
-// Route::get('/upload', function () {
-//     return view('SendFile');
-// });
+// send file route
+// File Uploading Route
+Route::get('/upload', function () {
+    return view('SendFile');
+});
 // Route::post('/upload', [SendFileController::class, 'upload']);
 
 
